@@ -1,0 +1,158 @@
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> dir
+
+
+    Directory: C:\Users\muhamad_hasymi\powershell\latihan_powershell
+
+
+Mode                LastWriteTime         Length Name                                                                
+----                -------------         ------ ----                                                                
+-a----       22/10/2019     16:00            118 modify.ps1                                                          
+
+
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> & ".\modify.ps1"
+At C:\Users\muhamad_hasymi\powershell\latihan_powershell\modify.ps1:1 char:46
++ ... et-WmiObject -Class Win32_OperatingSystem â€“ComputerName localhost |
++                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~
+The string is missing the terminator: ".
+    + CategoryInfo          : ParserError: (:) [], ParseException
+    + FullyQualifiedErrorId : TerminatorExpectedAtEndOfString
+ 
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> & '.\modify.ps1'
+At C:\Users\muhamad_hasymi\powershell\latihan_powershell\modify.ps1:1 char:46
++ ... et-WmiObject -Class Win32_OperatingSystem â€“ComputerName localhost |
++                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~
+The string is missing the terminator: ".
+    + CategoryInfo          : ParserError: (:) [], ParseException
+    + FullyQualifiedErrorId : TerminatorExpectedAtEndOfString
+ 
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> Get-WmiObject -Class Win32_OperatingSystem –ComputerName localhost |
+
+Select-Object -Property CSName,LastBootUpTime
+
+CSName          LastBootUpTime           
+------          --------------           
+DESKTOP-FVMD1T0 20191016142445.470182+420
+
+
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> Get-WmiObject -Class Win32_OperatingSystem –ComputerName localhost |
+
+Select-Object -Property CSName,@{n=”Last Booted”;
+
+e={[Management.ManagementDateTimeConverter]::ToDateTime($_.LastBootUpTime)}}
+
+
+CSName          Last Booted        
+------          -----------        
+DESKTOP-FVMD1T0 16/10/2019 14:24:45
+
+
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> C:\Users\muhamad_hasymi\powershell\latihan_powershell\last_boot_time.ps1
+
+CSName          Last Booted        
+------          -----------        
+DESKTOP-FVMD1T0 16/10/2019 14:24:45
+
+
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> C:\Users\muhamad_hasymi\powershell\latihan_powershell\last_boot_time.ps1
+
+CSName          Last Booted        
+------          -----------        
+DESKTOP-FVMD1T0 16/10/2019 14:24:45
+
+
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> C:\Users\muhamad_hasymi\powershell\latihan_powershell\last_boot_time.ps1
+
+CSName          Last Booted        
+------          -----------        
+DESKTOP-FVMD1T0 16/10/2019 14:24:45
+
+
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> C:\Users\muhamad_hasymi\powershell\latihan_powershell\last_boot_time.ps1
+
+CSName          Last Booted        
+------          -----------        
+DESKTOP-FVMD1T0 16/10/2019 14:24:45
+
+
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> help C:\last_boot_time.ps1
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> C:\Users\muhamad_hasymi\powershell\latihan_powershell\last_boot_time.ps1
+
+CSName          Last Booted        
+------          -----------        
+DESKTOP-FVMD1T0 16/10/2019 14:24:45
+
+
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> C:\Users\muhamad_hasymi\powershell\latihan_powershell\Get-LastBootTime.ps1
+
+CSName          Last Booted        
+------          -----------        
+DESKTOP-FVMD1T0 16/10/2019 14:24:45
+
+
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> C:\Users\muhamad_hasymi\powershell\latihan_powershell\Get-LastBootTime.ps1
+
+CSName          Last Booted        
+------          -----------        
+DESKTOP-FVMD1T0 16/10/2019 14:24:45
+
+
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> C:\Users\muhamad_hasymi\powershell\latihan_powershell\Get-LastBootTime.ps1
+Get-WmiObject : Cannot validate argument on parameter 'ComputerName'. The argument is null or empty. Provide an argument that is not 
+null or empty, and then try the command again.
+At C:\Users\muhamad_hasymi\powershell\latihan_powershell\Get-LastBootTime.ps1:7 char:58
++ ... -WmiObject -Class Win32_OperatingSystem –ComputerName $ComputerName |
++                                                           ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Get-WmiObject], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationError,Microsoft.PowerShell.Commands.GetWmiObjectCommand
+ 
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> help C:\Users\muhamad_hasymi\powershell\latihan_powershell\Get-LastBootTime.ps1
+Get-LastBootTime.ps1 [[-ComputerName] <string>]
+
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> help C:\Users\muhamad_hasymi\powershell\latihan_powershell\Get-LastBootTime.ps1
+Get-LastBootTime.ps1 [[-ComputerName] <string>]
+
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> help C:\Users\muhamad_hasymi\powershell\latihan_powershell\Get-LastBootTime.ps1
+
+NAME
+    C:\Users\muhamad_hasymi\powershell\latihan_powershell\Get-LastBootTime.ps1
+    
+SYNOPSIS
+    Shows when last your PC started up.
+    
+    
+SYNTAX
+    C:\Users\muhamad_hasymi\powershell\latihan_powershell\Get-LastBootTime.ps1 [-ComputerName] <String> [<CommonParameters>]
+    
+    
+DESCRIPTION
+    This is a WMI wrapper function to get the time that your PC last started up.
+    
+
+RELATED LINKS
+    www.howtogeek.com 
+
+REMARKS
+    To see the examples, type: "get-help C:\Users\muhamad_hasymi\powershell\latihan_powershell\Get-LastBootTime.ps1 -examples".
+    For more information, type: "get-help C:\Users\muhamad_hasymi\powershell\latihan_powershell\Get-LastBootTime.ps1 -detailed".
+    For technical information, type: "get-help C:\Users\muhamad_hasymi\powershell\latihan_powershell\Get-LastBootTime.ps1 -full".
+    For online help, type: "get-help C:\Users\muhamad_hasymi\powershell\latihan_powershell\Get-LastBootTime.ps1 -online"
+
+
+
+PS C:\Users\muhamad_hasymi\powershell\latihan_powershell> 
