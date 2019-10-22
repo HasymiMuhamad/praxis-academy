@@ -16,7 +16,7 @@ Some command line syntax that I have used in cmdline.txt :
 9. <code> move filename.txt folderlocation </code> - to move the file to another location
 10. <code> del filename.txt </code> - to delete the file
 11. <code> rd foldername </code> - to remove folder
-12. <code> netstat </code - to know about connection status
+12. <code> netstat </code> - to know about connection status
 13. <code> ping </code> - generally "ping" use to make sure some system task running well
 14. <code> ipconfig </code> - to know ip configuration
 15. <code> print folderlocation filename.txt </code> - to prepare file which will be printed
