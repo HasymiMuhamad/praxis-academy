@@ -1,4 +1,4 @@
-# praxis-academy
+# Praxis Academy 
 # praxis-academy-kemampuan-dasar-1-latihan-powershellscripts
 
 
