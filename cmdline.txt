@@ -1,0 +1,1099 @@
+Microsoft Windows [Version 10.0.18362.418]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\muhamad_hasymi>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi
+
+22/10/2019  10:08    <DIR>          .
+22/10/2019  10:08    <DIR>          ..
+11/10/2019  07:11    <DIR>          .android
+11/10/2019  06:11    <DIR>          .AndroidStudio3.5
+16/10/2019  13:49               499 .bash_history
+08/10/2019  01:04    <DIR>          .config
+10/10/2019  00:08                62 .gitconfig
+11/10/2019  07:11    <DIR>          .gradle
+09/10/2019  23:53    <DIR>          .ssh
+08/10/2019  02:49    <DIR>          .vscode
+11/10/2019  05:19    <DIR>          3D Objects
+11/10/2019  06:54    <DIR>          AndroidStudioProjects
+11/10/2019  05:19    <DIR>          Contacts
+22/10/2019  12:56    <DIR>          Creative Cloud Files
+16/10/2019  18:52    <DIR>          Desktop
+17/10/2019  11:01    <DIR>          Documents
+22/10/2019  10:44    <DIR>          Downloads
+11/10/2019  05:19    <DIR>          Favorites
+11/10/2019  05:19    <DIR>          Links
+11/10/2019  05:19    <DIR>          Music
+08/10/2019  11:23    <DIR>          OneDrive
+15/10/2019  19:35    <DIR>          Pictures
+14/10/2019  09:19    <DIR>          Postman
+11/10/2019  05:19    <DIR>          Saved Games
+11/10/2019  05:19    <DIR>          Searches
+22/10/2019  10:08                 6 test.txt
+18/10/2019  09:58    <DIR>          Videos
+               3 File(s)            567 bytes
+              24 Dir(s)  61.677.809.664 bytes free
+
+C:\Users\muhamad_hasymi>mkdir mencoba
+
+C:\Users\muhamad_hasymi>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi
+
+22/10/2019  13:09    <DIR>          .
+22/10/2019  13:09    <DIR>          ..
+11/10/2019  07:11    <DIR>          .android
+11/10/2019  06:11    <DIR>          .AndroidStudio3.5
+16/10/2019  13:49               499 .bash_history
+08/10/2019  01:04    <DIR>          .config
+10/10/2019  00:08                62 .gitconfig
+11/10/2019  07:11    <DIR>          .gradle
+09/10/2019  23:53    <DIR>          .ssh
+08/10/2019  02:49    <DIR>          .vscode
+11/10/2019  05:19    <DIR>          3D Objects
+11/10/2019  06:54    <DIR>          AndroidStudioProjects
+11/10/2019  05:19    <DIR>          Contacts
+22/10/2019  12:56    <DIR>          Creative Cloud Files
+16/10/2019  18:52    <DIR>          Desktop
+17/10/2019  11:01    <DIR>          Documents
+22/10/2019  10:44    <DIR>          Downloads
+11/10/2019  05:19    <DIR>          Favorites
+11/10/2019  05:19    <DIR>          Links
+22/10/2019  13:09    <DIR>          mencoba
+11/10/2019  05:19    <DIR>          Music
+08/10/2019  11:23    <DIR>          OneDrive
+15/10/2019  19:35    <DIR>          Pictures
+14/10/2019  09:19    <DIR>          Postman
+11/10/2019  05:19    <DIR>          Saved Games
+11/10/2019  05:19    <DIR>          Searches
+22/10/2019  10:08                 6 test.txt
+18/10/2019  09:58    <DIR>          Videos
+               3 File(s)            567 bytes
+              25 Dir(s)  61.677.576.192 bytes free
+
+C:\Users\muhamad_hasymi>cd mencoba
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:09    <DIR>          .
+22/10/2019  13:09    <DIR>          ..
+               0 File(s)              0 bytes
+               2 Dir(s)  61.677.576.192 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>echo.> coba.txt
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:09    <DIR>          .
+22/10/2019  13:09    <DIR>          ..
+22/10/2019  13:09                 2 coba.txt
+               1 File(s)              2 bytes
+               2 Dir(s)  61.677.641.728 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>start notepad.exe coba.txt
+
+C:\Users\muhamad_hasymi\mencoba>echo.> coba2.txt
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:11    <DIR>          .
+22/10/2019  13:11    <DIR>          ..
+22/10/2019  13:10             4.085 coba.txt
+22/10/2019  13:11                 2 coba2.txt
+               2 File(s)          4.087 bytes
+               2 Dir(s)  61.677.170.688 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>copy coba.txt coba2.txt
+Overwrite coba2.txt? (Yes/No/All): yes
+        1 file(s) copied.
+
+C:\Users\muhamad_hasymi\mencoba>tasklist
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0        472 K
+Registry                        96 Services                   0     43.380 K
+smss.exe                       380 Services                   0        664 K
+csrss.exe                      504 Services                   0      2.780 K
+wininit.exe                    596 Services                   0      6.628 K
+services.exe                   808 Services                   0      9.832 K
+lsass.exe                      816 Services                   0     17.124 K
+svchost.exe                    940 Services                   0      3.612 K
+fontdrvhost.exe                956 Services                   0      2.352 K
+svchost.exe                     68 Services                   0     25.020 K
+WUDFHost.exe                   440 Services                   0      6.464 K
+svchost.exe                    764 Services                   0     19.628 K
+svchost.exe                    848 Services                   0      8.172 K
+svchost.exe                   1136 Services                   0      7.008 K
+svchost.exe                   1180 Services                   0     10.456 K
+svchost.exe                   1188 Services                   0      6.984 K
+svchost.exe                   1264 Services                   0     11.948 K
+svchost.exe                   1276 Services                   0      8.124 K
+svchost.exe                   1364 Services                   0     11.272 K
+svchost.exe                   1368 Services                   0      8.440 K
+svchost.exe                   1412 Services                   0      6.000 K
+svchost.exe                   1520 Services                   0      8.464 K
+svchost.exe                   1576 Services                   0      9.364 K
+svchost.exe                   1664 Services                   0     18.012 K
+svchost.exe                   1732 Services                   0      6.620 K
+svchost.exe                   1800 Services                   0     10.616 K
+svchost.exe                   1816 Services                   0      9.124 K
+svchost.exe                   1904 Services                   0      7.472 K
+svchost.exe                   1944 Services                   0     16.164 K
+ibmpmsvc.exe                   900 Services                   0      7.284 K
+WUDFHost.exe                  1884 Services                   0      7.504 K
+svchost.exe                   2120 Services                   0      7.448 K
+svchost.exe                   2132 Services                   0     12.984 K
+svchost.exe                   2144 Services                   0     70.836 K
+svchost.exe                   2168 Services                   0      5.336 K
+svchost.exe                   2216 Services                   0     10.280 K
+Memory Compression            2248 Services                   0     65.608 K
+svchost.exe                   2308 Services                   0      8.032 K
+svchost.exe                   2340 Services                   0      8.604 K
+igfxCUIService.exe            2360 Services                   0      8.524 K
+svchost.exe                   2448 Services                   0      7.344 K
+svchost.exe                   2460 Services                   0      9.228 K
+svchost.exe                   2468 Services                   0      5.660 K
+svchost.exe                   2680 Services                   0     14.232 K
+svchost.exe                   2820 Services                   0      6.224 K
+svchost.exe                   2828 Services                   0      9.360 K
+svchost.exe                   2932 Services                   0      8.260 K
+svchost.exe                   3012 Services                   0     21.988 K
+svchost.exe                   3068 Services                   0     13.764 K
+spoolsv.exe                   2800 Services                   0     15.172 K
+svchost.exe                   3092 Services                   0     12.976 K
+svchost.exe                   3128 Services                   0     24.188 K
+svchost.exe                   3176 Services                   0      5.692 K
+BtwRSupportService.exe        3292 Services                   0      4.216 K
+AdobeUpdateService.exe        3304 Services                   0      8.740 K
+AGSService.exe                3312 Services                   0     14.096 K
+AGMService.exe                3320 Services                   0      7.012 K
+svchost.exe                   3332 Services                   0     22.412 K
+svchost.exe                   3344 Services                   0     26.008 K
+svchost.exe                   3360 Services                   0     14.596 K
+svchost.exe                   3396 Services                   0     24.368 K
+NVDisplay.Container.exe       3452 Services                   0      7.692 K
+svchost.exe                   3492 Services                   0      3.484 K
+svchost.exe                   3504 Services                   0      5.608 K
+svchost.exe                   3512 Services                   0      6.668 K
+svchost.exe                   3556 Services                   0      3.580 K
+MsMpEng.exe                   3568 Services                   0    177.328 K
+svchost.exe                   3576 Services                   0     15.256 K
+TeamViewer_Service.exe        3596 Services                   0     21.512 K
+svchost.exe                   3676 Services                   0     13.048 K
+svchost.exe                   3784 Services                   0      3.004 K
+svchost.exe                   3944 Services                   0      7.432 K
+unsecapp.exe                  4636 Services                   0      4.884 K
+svchost.exe                   1168 Services                   0      7.440 K
+NisSrv.exe                    4728 Services                   0      6.240 K
+svchost.exe                   5180 Services                   0     12.192 K
+svchost.exe                   5464 Services                   0      3.576 K
+svchost.exe                   5472 Services                   0     12.012 K
+SearchIndexer.exe             6152 Services                   0     42.412 K
+SecurityHealthService.exe     7976 Services                   0     11.428 K
+svchost.exe                   5756 Services                   0      1.956 K
+svchost.exe                   4088 Services                   0      7.584 K
+svchost.exe                   8844 Services                   0     12.140 K
+svchost.exe                   3964 Services                   0      4.924 K
+svchost.exe                   4316 Services                   0      6.552 K
+SgrmBroker.exe                9524 Services                   0      4.292 K
+svchost.exe                   6140 Services                   0     10.124 K
+svchost.exe                   9220 Services                   0      4.988 K
+svchost.exe                   4436 Services                   0     14.600 K
+svchost.exe                   9168 Services                   0      5.172 K
+vmnat.exe                     6412 Services                   0      3.140 K
+vmnetdhcp.exe                 3984 Services                   0      1.072 K
+svchost.exe                  11116 Services                   0      5.708 K
+vmware-usbarbitrator64.ex    12128 Services                   0      3.848 K
+vmware-authd.exe             12212 Services                   0      4.024 K
+vmware-hostd.exe             12280 Services                   0      8.020 K
+svchost.exe                  11656 Services                   0      4.984 K
+svchost.exe                  10560 Services                   0     10.328 K
+svchost.exe                  11564 Services                   0      3.004 K
+svchost.exe                   3696 Services                   0      9.664 K
+svchost.exe                   8380 Services                   0      6.440 K
+svchost.exe                   4832 Services                   0      8.832 K
+dasHost.exe                  10812 Services                   0     13.732 K
+svchost.exe                  12884 Services                   0     13.780 K
+dasHost.exe                   8684 Services                   0      6.404 K
+svchost.exe                  13800 Services                   0      9.116 K
+svchost.exe                   9444 Services                   0      9.132 K
+svchost.exe                   4144 Services                   0      5.704 K
+svchost.exe                   3380 Services                   0      8.096 K
+csrss.exe                     8264 Console                   14      5.596 K
+winlogon.exe                 12812 Console                   14      9.988 K
+fontdrvhost.exe               1928 Console                   14      6.664 K
+dwm.exe                       5132 Console                   14     54.312 K
+nvxdsync.exe                  1584 Console                   14     22.984 K
+svchost.exe                   9104 Services                   0      5.176 K
+WmiPrvSE.exe                  5388 Services                   0     11.972 K
+WmiPrvSE.exe                 11928 Services                   0     17.684 K
+ctfmon.exe                   15036 Console                   14     15.044 K
+svchost.exe                  10504 Console                   14     17.608 K
+sihost.exe                   13168 Console                   14     24.240 K
+svchost.exe                  10860 Console                   14     35.876 K
+svchost.exe                   5664 Services                   0      8.988 K
+explorer.exe                 14632 Console                   14    103.160 K
+taskhostw.exe                13688 Console                   14     14.364 K
+igfxEM.exe                   13752 Console                   14     13.572 K
+igfxHK.exe                    2712 Console                   14      9.716 K
+igfxTray.exe                  4108 Console                   14     13.756 K
+svchost.exe                   9668 Console                   14     21.276 K
+StartMenuExperienceHost.e    10732 Console                   14     60.924 K
+TeamViewer.exe               10252 Console                   14     39.744 K
+PowerMgr.exe                  6172 Console                   14      2.948 K
+dllhost.exe                    512 Console                   14     12.220 K
+RuntimeBroker.exe            15032 Console                   14     23.288 K
+RuntimeBroker.exe             6332 Console                   14     45.452 K
+tv_w32.exe                   12932 Console                   14      7.612 K
+tv_x64.exe                   13196 Console                   14      7.504 K
+SkypeApp.exe                  4092 Console                   14     38.172 K
+SkypeBackgroundHost.exe      14052 Console                   14      9.968 K
+YourPhone.exe                 2656 Console                   14     34.312 K
+chrome.exe                    7360 Console                   14    116.668 K
+SecurityHealthSystray.exe     9864 Console                   14      8.680 K
+RuntimeBroker.exe             5048 Console                   14      7.180 K
+OneDrive.exe                 13724 Console                   14     66.872 K
+CCXProcess.exe               14804 Console                   14      2.944 K
+node.exe                      3232 Console                   14     57.048 K
+conhost.exe                  12952 Console                   14     10.528 K
+VM331STI.EXE                 13772 Console                   14      8.860 K
+Creative Cloud.exe            7856 Console                   14     84.464 K
+vmware-tray.exe              13044 Console                   14     10.476 K
+SearchUI.exe                  8320 Console                   14    168.988 K
+chrome.exe                    7756 Console                   14      6.256 K
+chrome.exe                    4272 Console                   14      8.644 K
+chrome.exe                    7728 Console                   14    170.140 K
+chrome.exe                    8776 Console                   14     28.520 K
+AdobeIPCBroker.exe            7364 Console                   14     12.392 K
+chrome.exe                    9956 Console                   14     59.356 K
+RuntimeBroker.exe             5824 Console                   14     15.164 K
+ShellExperienceHost.exe      12012 Console                   14     56.820 K
+RuntimeBroker.exe             3152 Console                   14     22.352 K
+alg.exe                       1228 Services                   0      6.564 K
+Adobe Desktop Service.exe     7300 Console                   14    240.672 K
+Adobe CEF Helper.exe         13932 Console                   14     68.060 K
+svchost.exe                   5480 Console                   14     12.132 K
+CoreSync.exe                 13124 Console                   14     33.520 K
+svchost.exe                   5524 Services                   0      5.952 K
+AdobeNotificationClient.e    13484 Console                   14     17.388 K
+CCLibrary.exe                13972 Console                   14      3.068 K
+node.exe                      7560 Console                   14     66.792 K
+conhost.exe                  13444 Console                   14     10.956 K
+audiodg.exe                    332 Services                   0     12.736 K
+RuntimeBroker.exe            10440 Console                   14      6.344 K
+chrome.exe                   14252 Console                   14    121.356 K
+chrome.exe                    8056 Console                   14     64.880 K
+chrome.exe                     240 Console                   14     14.844 K
+chrome.exe                    1604 Console                   14     86.048 K
+WinStore.App.exe              1708 Console                   14         36 K
+ApplicationFrameHost.exe     13552 Console                   14     38.276 K
+RuntimeBroker.exe             5752 Console                   14      7.020 K
+chrome.exe                   11688 Console                   14     20.896 K
+SystemSettings.exe            9516 Console                   14         44 K
+MicrosoftEdge.exe             9872 Console                   14      9.692 K
+browser_broker.exe            3844 Console                   14      8.240 K
+dllhost.exe                   2316 Console                   14     12.168 K
+RuntimeBroker.exe            10852 Console                   14      7.468 K
+MicrosoftEdgeCP.exe           6560 Console                   14     25.512 K
+MicrosoftEdgeSH.exe          13808 Console                   14     11.140 K
+Video.UI.exe                  9640 Console                   14         64 K
+smartscreen.exe              12616 Console                   14     22.896 K
+svchost.exe                  12612 Services                   0      6.812 K
+cmd.exe                      13880 Console                   14      4.500 K
+conhost.exe                  14496 Console                   14     18.308 K
+SearchProtocolHost.exe        9868 Services                   0      9.720 K
+notepad.exe                   8716 Console                   14     16.064 K
+WindowsInternal.Composabl    13840 Console                   14     41.424 K
+SearchFilterHost.exe          6796 Services                   0      8.600 K
+tasklist.exe                  5680 Console                   14      8.324 K
+
+C:\Users\muhamad_hasymi\mencoba>taskkill \im notepad.exe \f
+ERROR: Invalid argument/option - '\im'.
+Type "TASKKILL /?" for usage.
+
+C:\Users\muhamad_hasymi\mencoba>taskkill /im notepad.exe \f
+ERROR: Invalid argument/option - '\f'.
+Type "TASKKILL /?" for usage.
+
+C:\Users\muhamad_hasymi\mencoba>taskkill /im notepad.exe /f
+SUCCESS: The process "notepad.exe" with PID 8716 has been terminated.
+
+C:\Users\muhamad_hasymi\mencoba>start notepad.exe coba.txt
+
+C:\Users\muhamad_hasymi\mencoba>mkdir latihan
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:17    <DIR>          .
+22/10/2019  13:17    <DIR>          ..
+22/10/2019  13:14            24.520 coba.txt
+22/10/2019  13:10             4.085 coba2.txt
+22/10/2019  13:17    <DIR>          latihan
+               2 File(s)         28.605 bytes
+               3 Dir(s)  61.675.520.000 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>rmdir /s latihan
+latihan, Are you sure (Y/N)? y
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:18    <DIR>          .
+22/10/2019  13:18    <DIR>          ..
+22/10/2019  13:14            24.520 coba.txt
+22/10/2019  13:10             4.085 coba2.txt
+               2 File(s)         28.605 bytes
+               2 Dir(s)  61.675.339.776 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>echo.> hapus.txt
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:18    <DIR>          .
+22/10/2019  13:18    <DIR>          ..
+22/10/2019  13:14            24.520 coba.txt
+22/10/2019  13:10             4.085 coba2.txt
+22/10/2019  13:18                 2 hapus.txt
+               3 File(s)         28.607 bytes
+               2 Dir(s)  61.675.339.776 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>del hapus.txt
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:18    <DIR>          .
+22/10/2019  13:18    <DIR>          ..
+22/10/2019  13:14            24.520 coba.txt
+22/10/2019  13:10             4.085 coba2.txt
+               2 File(s)         28.605 bytes
+               2 Dir(s)  61.675.339.776 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>echo.> test.txt
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:18    <DIR>          .
+22/10/2019  13:18    <DIR>          ..
+22/10/2019  13:14            24.520 coba.txt
+22/10/2019  13:10             4.085 coba2.txt
+22/10/2019  13:18                 2 test.txt
+               3 File(s)         28.607 bytes
+               2 Dir(s)  61.675.339.776 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>rd test.txt
+The directory name is invalid.
+
+C:\Users\muhamad_hasymi\mencoba>mkdir test2
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:19    <DIR>          .
+22/10/2019  13:19    <DIR>          ..
+22/10/2019  13:14            24.520 coba.txt
+22/10/2019  13:10             4.085 coba2.txt
+22/10/2019  13:18                 2 test.txt
+22/10/2019  13:19    <DIR>          test2
+               3 File(s)         28.607 bytes
+               3 Dir(s)  61.675.339.776 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>rd test2
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:19    <DIR>          .
+22/10/2019  13:19    <DIR>          ..
+22/10/2019  13:14            24.520 coba.txt
+22/10/2019  13:10             4.085 coba2.txt
+22/10/2019  13:18                 2 test.txt
+               3 File(s)         28.607 bytes
+               2 Dir(s)  61.675.339.776 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>del test.txt
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:19    <DIR>          .
+22/10/2019  13:19    <DIR>          ..
+22/10/2019  13:14            24.520 coba.txt
+22/10/2019  13:10             4.085 coba2.txt
+               2 File(s)         28.605 bytes
+               2 Dir(s)  61.675.339.776 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>mkdir berlatih
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:20    <DIR>          .
+22/10/2019  13:20    <DIR>          ..
+22/10/2019  13:20    <DIR>          berlatih
+22/10/2019  13:14            24.520 coba.txt
+22/10/2019  13:10             4.085 coba2.txt
+               2 File(s)         28.605 bytes
+               3 Dir(s)  61.675.274.240 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>move coba2.txt berlatih
+        1 file(s) moved.
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:20    <DIR>          .
+22/10/2019  13:20    <DIR>          ..
+22/10/2019  13:20    <DIR>          berlatih
+22/10/2019  13:14            24.520 coba.txt
+               1 File(s)         24.520 bytes
+               3 Dir(s)  61.675.274.240 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>cd berlatih
+
+C:\Users\muhamad_hasymi\mencoba\berlatih>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba\berlatih
+
+22/10/2019  13:20    <DIR>          .
+22/10/2019  13:20    <DIR>          ..
+22/10/2019  13:10             4.085 coba2.txt
+               1 File(s)          4.085 bytes
+               2 Dir(s)  61.675.274.240 bytes free
+
+C:\Users\muhamad_hasymi\mencoba\berlatih>ren coba2.txt coba3.txt
+
+C:\Users\muhamad_hasymi\mencoba\berlatih>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba\berlatih
+
+22/10/2019  13:20    <DIR>          .
+22/10/2019  13:20    <DIR>          ..
+22/10/2019  13:10             4.085 coba3.txt
+               1 File(s)          4.085 bytes
+               2 Dir(s)  61.675.438.080 bytes free
+
+C:\Users\muhamad_hasymi\mencoba\berlatih>time /t
+13:21
+
+C:\Users\muhamad_hasymi\mencoba\berlatih>tree
+Folder PATH listing for volume C Disk
+Volume serial number is 2403-B58C
+C:.
+No subfolders exist
+
+
+C:\Users\muhamad_hasymi\mencoba\berlatih>cd ../
+
+C:\Users\muhamad_hasymi\mencoba>cd../
+
+C:\Users\muhamad_hasymi>tree
+Folder PATH listing for volume C Disk
+Volume serial number is 2403-B58C
+C:.
+├───.android
+│   ├───avd
+│   ├───build-cache
+│   │   └───3.5.1
+│   ├───cache
+│   └───studio
+│       └───installer
+├───.AndroidStudio3.5
+│   ├───config
+│   │   ├───codestyles
+│   │   ├───options
+│   │   ├───plugins
+│   │   └───tasks
+│   └───system
+│       ├───caches
+│       ├───compile-server
+│       │   ├───myapplication_d0d12c98
+│       │   └───my_application_d0d12c98
+│       ├───compiler
+│       │   └───myapplication.9338428f
+│       │       └───.generated
+│       ├───external_build_system
+│       │   └───myapplication.9338428f
+│       ├───extResources
+│       ├───frameworks
+│       │   └───detection
+│       │       └───My Application.9338428f
+│       ├───gradle
+│       │   └───Projects
+│       │       └───66106cef
+│       ├───httpFileSystem
+│       ├───index
+│       │   ├───.persistent
+│       │   │   ├───bytecodeanalysis
+│       │   │   ├───idindex
+│       │   │   ├───todoindex
+│       │   │   └───trigram.index
+│       │   ├───android.ndk.jni.nativemethodindex
+│       │   ├───bytecodeanalysis
+│       │   ├───databindingxmlindex
+│       │   ├───domfileindex
+│       │   ├───editorconfig.index.name
+│       │   ├───fileincludes
+│       │   ├───filenameindex
+│       │   ├───filenamewithoutextensionindex
+│       │   ├───filetypes
+│       │   ├───frameworkdetectionindex
+│       │   ├───groovy.trait.fields
+│       │   ├───groovy.trait.methods
+│       │   ├───groovydslfileindex
+│       │   ├───html5.custom.attributes.index
+│       │   ├───idindex
+│       │   ├───imagefileinfoindex
+│       │   ├───java.auto.module.name
+│       │   ├───java.binary.plus.expression
+│       │   ├───java.fun.expression
+│       │   ├───java.null.method.argument
+│       │   ├───java.simple.property
+│       │   ├───json.file.root.values
+│       │   ├───jvm.hierarchy
+│       │   ├───org.jetbrains.kotlin.ide.konan.index.kotlinnativemetafileindex
+│       │   ├───org.jetbrains.kotlin.idea.versions.kotlinjsmetadataversionindex
+│       │   ├───org.jetbrains.kotlin.idea.versions.kotlinjvmmetadataversionindex
+│       │   ├───org.jetbrains.kotlin.idea.vfilefinder.kotlinclassfileindex
+│       │   ├───org.jetbrains.kotlin.idea.vfilefinder.kotlinjavascriptmetafileindex
+│       │   ├───org.jetbrains.kotlin.idea.vfilefinder.kotlinjvmmoduleannotationsindex
+│       │   ├───org.jetbrains.kotlin.idea.vfilefinder.kotlinmetadatafileindex
+│       │   ├───org.jetbrains.kotlin.idea.vfilefinder.kotlinmetadatafilepackageindex
+│       │   ├───org.jetbrains.kotlin.idea.vfilefinder.kotlinmodulemappingindex
+│       │   ├───org.jetbrains.kotlin.idea.vfilefinder.kotlinpackagesourcesmembernamesindex
+│       │   ├───refqueueindex
+│       │   ├───relaxsymbolindex
+│       │   ├───schematypeinheritance
+│       │   ├───stubs
+│       │   │   ├───.fileTypes
+│       │   │   ├───.versions
+│       │   │   ├───dom.elementclass
+│       │   │   ├───dom.namespacekey
+│       │   │   ├───gr.annot.members
+│       │   │   ├───gr.annot.method.name
+│       │   │   ├───gr.anonymous.class
+│       │   │   ├───gr.class.fqn
+│       │   │   ├───gr.class.super
+│       │   │   ├───gr.field.name
+│       │   │   ├───gr.method.name
+│       │   │   ├───gr.script.class
+│       │   │   ├───gr.script.fqn
+│       │   │   ├───java.annotations
+│       │   │   ├───java.anonymous.baseref
+│       │   │   ├───java.class.extlist
+│       │   │   ├───java.class.fqn
+│       │   │   ├───java.class.shortname
+│       │   │   ├───java.field.name
+│       │   │   ├───java.method.name
+│       │   │   ├───java.method.parameter.types
+│       │   │   ├───java.module.name
+│       │   │   ├───jvm.static.member.name
+│       │   │   ├───jvm.static.member.type
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinannotationsindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinclassshortnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinexactpackagesindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinfilefacadeclassbypackageindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinfilefacadefqnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinfilefacadeshortnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinfilepartclassindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinfullclassnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinfunctionshortnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinmultifileclasspartindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinoverridableinternalmembersshortnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinprobablycontractedfunctionshortnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinprobablynothingfunctionshortnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinprobablynothingpropertyshortnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinpropertyshortnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinscriptfqnindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlinsuperclassindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlintoplevelclassbypackageindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlintoplevelextensionsbyreceivertypeindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlintoplevelfunctionbypackageindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlintoplevelfunctionfqnnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlintoplevelpropertybypackageindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlintoplevelpropertyfqnnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlintopleveltypealiasbypackageindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlintopleveltypealiasfqnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlintypealiasbyexpansionshortnameindex
+│       │   │   ├───org.jetbrains.kotlin.idea.stubindex.kotlintypealiasshortnameindex
+│       │   │   └───properties.index
+│       │   ├───todoindex
+│       │   ├───trigram.index
+│       │   ├───xmlnamespaces
+│       │   ├───xmlproperties
+│       │   ├───xmltagnames
+│       │   └───yaml.keys.name
+│       ├───lint
+│       ├───LocalHistory
+│       ├───log
+│       │   ├───threadDumps-freeze-20191011-061219-AI-191.8026.42.35.5900203-9sec
+│       │   ├───threadDumps-freeze-20191011-061231-AI-191.8026.42.35.5900203-10sec
+│       │   ├───threadDumps-freeze-20191011-065449-AI-191.8026.42.35.5900203-14sec
+│       │   ├───threadDumps-freeze-20191011-065503-AI-191.8026.42.35.5900203-9sec
+│       │   ├───threadDumps-freeze-20191011-071642-AI-191.8026.42.35.5900203-12sec
+│       │   └───threadDumps-freeze-20191011-071656-AI-191.8026.42.35.5900203-22sec
+│       ├───resource_folder_cache
+│       │   └───myapplication.9338428f
+│       │       └───main_10b9
+│       ├───stats
+│       ├───tasks
+│       ├───tmp
+│       ├───vcs-users
+│       ├───whatsnew
+│       └───workspace
+├───.config
+│   └───configstore
+├───.gradle
+│   ├───caches
+│   │   ├───5.4.1
+│   │   │   ├───executionHistory
+│   │   │   ├───file-changes
+│   │   │   ├───fileHashes
+│   │   │   ├───generated-gradle-jars
+│   │   │   ├───md-rule
+│   │   │   ├───md-supplier
+│   │   │   ├───scripts
+│   │   │   │   ├───2aif1dne6iu4d59vsgrpiml57
+│   │   │   │   │   ├───cp_settings
+│   │   │   │   │   │   └───cp_settingsdcd040730888da95d185715568c9cc57
+│   │   │   │   │   │       ├───classes
+│   │   │   │   │   │       └───metadata
+│   │   │   │   │   └───settings
+│   │   │   │   │       └───settingsdcd040730888da95d185715568c9cc57
+│   │   │   │   │           ├───classes
+│   │   │   │   │           └───metadata
+│   │   │   │   ├───4p4erd2dz0bkx6052vqfygi6s
+│   │   │   │   │   ├───cp_init
+│   │   │   │   │   │   └───cp_initdcd040730888da95d185715568c9cc57
+│   │   │   │   │   │       ├───classes
+│   │   │   │   │   │       └───metadata
+│   │   │   │   │   └───init
+│   │   │   │   │       └───init0151eef647085678380ed8dabbbb472c
+│   │   │   │   │           ├───classes
+│   │   │   │   │           └───metadata
+│   │   │   │   ├───5od5yxan9v6nx9itijwh0xoj0
+│   │   │   │   │   ├───cp_init
+│   │   │   │   │   │   └───cp_initdcd040730888da95d185715568c9cc57
+│   │   │   │   │   │       ├───classes
+│   │   │   │   │   │       └───metadata
+│   │   │   │   │   └───init
+│   │   │   │   │       └───initb87261167d17a4a16fa5ab9f5e814079
+│   │   │   │   │           ├───classes
+│   │   │   │   │           └───metadata
+│   │   │   │   ├───7x7ddo08skf7kfevd97ac2dpc
+│   │   │   │   │   ├───cp_proj
+│   │   │   │   │   │   └───cp_projdcd040730888da95d185715568c9cc57
+│   │   │   │   │   │       ├───classes
+│   │   │   │   │   │       └───metadata
+│   │   │   │   │   └───proj
+│   │   │   │   │       └───projbe5ccdc4268a7cda76d094fb4ba27908
+│   │   │   │   │           ├───classes
+│   │   │   │   │           └───metadata
+│   │   │   │   ├───8216xdmczgsh3zdodg0qqnb4p
+│   │   │   │   │   ├───cp_init
+│   │   │   │   │   │   └───cp_initdcd040730888da95d185715568c9cc57
+│   │   │   │   │   │       ├───classes
+│   │   │   │   │   │       └───metadata
+│   │   │   │   │   └───init
+│   │   │   │   │       └───initcfe672642733d3053aaeb510950d3934
+│   │   │   │   │           ├───classes
+│   │   │   │   │           └───metadata
+│   │   │   │   ├───cuxdezk7bh4nrnofkognqat5e
+│   │   │   │   │   ├───cp_proj
+│   │   │   │   │   │   └───cp_projdcd040730888da95d185715568c9cc57
+│   │   │   │   │   │       ├───classes
+│   │   │   │   │   │       └───metadata
+│   │   │   │   │   └───proj
+│   │   │   │   │       └───projbe5ccdc4268a7cda76d094fb4ba27908
+│   │   │   │   │           ├───classes
+│   │   │   │   │           └───metadata
+│   │   │   │   └───vcsgccwfvd743plz9wrl6upe
+│   │   │   │       ├───cp_init
+│   │   │   │       │   └───cp_initdcd040730888da95d185715568c9cc57
+│   │   │   │       │       ├───classes
+│   │   │   │       │       └───metadata
+│   │   │   │       └───init
+│   │   │   │           └───initfc4e24cc985ec72062ed8338e3bc4a03
+│   │   │   │               ├───classes
+│   │   │   │               └───metadata
+│   │   │   └───scripts-remapped
+│   │   │       ├───build_2so5ifzcx58ujtaua9lyekd24
+│   │   │       │   └───cuxdezk7bh4nrnofkognqat5e
+│   │   │       │       ├───cp_projdcd040730888da95d185715568c9cc57
+│   │   │       │       │   ├───classes
+│   │   │       │       │   └───metadata
+│   │   │       │       └───projbe5ccdc4268a7cda76d094fb4ba27908
+│   │   │       │           ├───classes
+│   │   │       │           └───metadata
+│   │   │       ├───build_9ky6ua1yccqvg23eyztwcykbc
+│   │   │       │   └───7x7ddo08skf7kfevd97ac2dpc
+│   │   │       │       ├───cp_projdcd040730888da95d185715568c9cc57
+│   │   │       │       │   ├───classes
+│   │   │       │       │   └───metadata
+│   │   │       │       └───projbe5ccdc4268a7cda76d094fb4ba27908
+│   │   │       │           ├───classes
+│   │   │       │           └───metadata
+│   │   │       ├───ijinit_45z6yskpd13luoi1g9r65ond4
+│   │   │       │   └───vcsgccwfvd743plz9wrl6upe
+│   │   │       │       ├───cp_initdcd040730888da95d185715568c9cc57
+│   │   │       │       │   ├───classes
+│   │   │       │       │   └───metadata
+│   │   │       │       └───initfc4e24cc985ec72062ed8338e3bc4a03
+│   │   │       │           ├───classes
+│   │   │       │           └───metadata
+│   │   │       ├───settings_cbw7li59gj0djteg2trt3bnrw
+│   │   │       │   └───2aif1dne6iu4d59vsgrpiml57
+│   │   │       │       ├───cp_settingsdcd040730888da95d185715568c9cc57
+│   │   │       │       │   ├───classes
+│   │   │       │       │   └───metadata
+│   │   │       │       └───settingsdcd040730888da95d185715568c9cc57
+│   │   │       │           ├───classes
+│   │   │       │           └───metadata
+│   │   │       ├───sync_java_lib_91v5e28pg6i5awka2z4qneagp
+│   │   │       │   └───5od5yxan9v6nx9itijwh0xoj0
+│   │   │       │       ├───cp_initdcd040730888da95d185715568c9cc57
+│   │   │       │       │   ├───classes
+│   │   │       │       │   └───metadata
+│   │   │       │       └───initb87261167d17a4a16fa5ab9f5e814079
+│   │   │       │           ├───classes
+│   │   │       │           └───metadata
+│   │   │       ├───sync_ng_build_script_classpath_e606vg4v7s8fv88opv3jjnuj3
+│   │   │       │   └───8216xdmczgsh3zdodg0qqnb4p
+│   │   │       │       ├───cp_initdcd040730888da95d185715568c9cc57
+│   │   │       │       │   ├───classes
+│   │   │       │       │   └───metadata
+│   │   │       │       └───initcfe672642733d3053aaeb510950d3934
+│   │   │       │           ├───classes
+│   │   │       │           └───metadata
+│   │   │       └───sync_ng_kapt_cm3ibr3hr2t19yefqzkkydwdm
+│   │   │           └───4p4erd2dz0bkx6052vqfygi6s
+│   │   │               ├───cp_initdcd040730888da95d185715568c9cc57
+│   │   │               │   ├───classes
+│   │   │               │   └───metadata
+│   │   │               └───init0151eef647085678380ed8dabbbb472c
+│   │   │                   ├───classes
+│   │   │                   └───metadata
+│   │   ├───jars-3
+│   │   │   ├───00165ee3c45845653801be8b30af2cc8
+│   │   │   ├───0175d073bcb5b3b8cf963000ee9d6948
+│   │   │   ├───0a28c8704832800a117c175dfe23a0f3
+│   │   │   ├───1292525a786f20744e75964100cf9267
+│   │   │   ├───1517eb22fc9df58a296a36638701b06a
+│   │   │   ├───240cef9a0b47e3ec95edd1d258a4b8aa
+│   │   │   ├───2d302e4cb889bbd6b2a0baf41e9d8334
+│   │   │   ├───2dd8fac3efe15084dd255f3a8c325664
+│   │   │   ├───497c99dc43ce8fece95d0e589f2459bd
+│   │   │   ├───5560c3c9e9794bd082f3f7376823f9ee
+│   │   │   ├───7591d1435bc8596a524fe014c325b879
+│   │   │   ├───8c0c682498be444601f9083c4f1918be
+│   │   │   ├───8ca913fe8caa021309d2677ad272de95
+│   │   │   ├───8d8f8b6e3c56f28da647b3aa6237de29
+│   │   │   ├───94264dac5c2fc3832a782f6ac36c712c
+│   │   │   ├───a86f37d79966d92669abbae41c8d0de7
+│   │   │   ├───a9f41526e10d2a4a4916a5ceafe44a64
+│   │   │   ├───bcadddccacf6ae6ac9a25f18bfcdc323
+│   │   │   ├───c4b97aac952beb284982a7c885e5380b
+│   │   │   ├───db0750b74c08d2405a2c4dc57ed79ac2
+│   │   │   ├───e7617dab25c4d86472e073cd6ed41284
+│   │   │   └───e88871ab6780c9cf9c9695616afca86e
+│   │   ├───journal-1
+│   │   ├───modules-2
+│   │   │   ├───files-2.1
+│   │   │   │   ├───androidx.annotation
+│   │   │   │   │   └───annotation
+│   │   │   │   │       ├───1.0.0
+│   │   │   │   │       │   ├───1ec1fd6918db230c4b2e8ffa78f724267fb6328c
+│   │   │   │   │       │   ├───45599f2cd5965ac05a1488fa2a5c0cdd7c499ead
+│   │   │   │   │       │   └───c5897dbbda33e66ca6f3224a2534891bbfcbda5a
+│   │   │   │   │       └───1.0.2
+│   │   │   │   │           ├───2f1d597d48e5309e935ce1212eedf5ae69d3f97
+│   │   │   │   │           ├───7cb4c8206e69c65044fe3159426c3e4744113d22
+│   │   │   │   │           ├───b084a63174aa0fc1ee26d73e97b72fda3fe87c40
+│   │   │   │   │           └───f1dc2b36a23233b355a06839d55d7b4f0765b724
+│   │   │   │   ├───androidx.appcompat
+│   │   │   │   │   └───appcompat
+│   │   │   │   │       └───1.0.2
+│   │   │   │   │           ├───2533a36c928bb27a3cc6843a25f83754b3c3ae
+│   │   │   │   │           ├───c9d71a88fea7f0af4bf936ec095161ebc5a57f12
+│   │   │   │   │           └───e38e7c85994112b70d4548176128c72b8477c110
+│   │   │   │   ├───androidx.arch.core
+│   │   │   │   │   ├───core-common
+│   │   │   │   │   │   └───2.0.0
+│   │   │   │   │   │       ├───645b95386a07be66eef0bfe7007535e3f95ec642
+│   │   │   │   │   │       ├───bb21b9a11761451b51624ac428d1f1bb5deeac38
+│   │   │   │   │   │       └───f99012a3ab10fd604a8631aaa8d525aa44df5da5
+│   │   │   │   │   └───core-runtime
+│   │   │   │   │       └───2.0.0
+│   │   │   │   │           ├───bc41b287c95bc50a3cd27cb1b7cfb301805ba7f1
+│   │   │   │   │           ├───c5be9edf9ca9135a465d23939f6e7d0e1cf90b41
+│   │   │   │   │           └───d3572f4d27cca318471a0005ce6c93740ad5e9cb
+│   │   │   │   ├───androidx.asynclayoutinflater
+│   │   │   │   │   └───asynclayoutinflater
+│   │   │   │   │       └───1.0.0
+│   │   │   │   │           ├───5ffa788d19a6863799f25cb50d4fdfb0ec649037
+│   │   │   │   │           ├───ac4d50701fce5c88dcc514f58e695cd32f05134c
+│   │   │   │   │           └───fddbfd83af5c2af0884a3a36a91ad8113d7bd3a4
+│   │   │   │   ├───androidx.collection
+│   │   │   │   │   └───collection
+│   │   │   │   │       └───1.0.0
+^C
+C:\Users\muhamad_hasymi>start code.exe
+The system cannot find the file code.exe.
+
+C:\Users\muhamad_hasymi>color e
+
+C:\Users\muhamad_hasymi>netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    10.60.139.119:64284    52.139.250.253:https   ESTABLISHED
+  TCP    10.60.139.119:64399    whatsapp-cdn-shv-02-sin2:https  ESTABLISHED
+  TCP    10.60.139.119:64451    lb-192-30-253-124-iad:https  ESTABLISHED
+  TCP    10.60.139.119:64473    SG-SGP-ANX-R001:5938   ESTABLISHED
+^C
+C:\Users\muhamad_hasymi>ping
+
+Usage: ping [-t] [-a] [-n count] [-l size] [-f] [-i TTL] [-v TOS]
+            [-r count] [-s count] [[-j host-list] | [-k host-list]]
+            [-w timeout] [-R] [-S srcaddr] [-c compartment] [-p]
+            [-4] [-6] target_name
+
+Options:
+    -t             Ping the specified host until stopped.
+                   To see statistics and continue - type Control-Break;
+                   To stop - type Control-C.
+    -a             Resolve addresses to hostnames.
+    -n count       Number of echo requests to send.
+    -l size        Send buffer size.
+    -f             Set Don't Fragment flag in packet (IPv4-only).
+    -i TTL         Time To Live.
+    -v TOS         Type Of Service (IPv4-only. This setting has been deprecated
+                   and has no effect on the type of service field in the IP
+                   Header).
+    -r count       Record route for count hops (IPv4-only).
+    -s count       Timestamp for count hops (IPv4-only).
+    -j host-list   Loose source route along host-list (IPv4-only).
+    -k host-list   Strict source route along host-list (IPv4-only).
+    -w timeout     Timeout in milliseconds to wait for each reply.
+    -R             Use routing header to test reverse route also (IPv6-only).
+                   Per RFC 5095 the use of this routing header has been
+                   deprecated. Some systems may drop echo requests if
+                   this header is used.
+    -S srcaddr     Source address to use.
+    -c compartment Routing compartment identifier.
+    -p             Ping a Hyper-V Network Virtualization provider address.
+    -4             Force using IPv4.
+    -6             Force using IPv6.
+
+
+C:\Users\muhamad_hasymi>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter VMware Network Adapter VMnet1:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::538:8937:8703:660a%45
+   IPv4 Address. . . . . . . . . . . : 192.168.15.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+
+Ethernet adapter VMware Network Adapter VMnet8:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::4c4c:3230:7f9f:855f%46
+   IPv4 Address. . . . . . . . . . . : 192.168.117.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
+
+Ethernet adapter Ethernet 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : student.eduroam.wifi.uny.ac.id
+   Link-local IPv6 Address . . . . . : fe80::644d:aa81:319c:942c%3
+   IPv4 Address. . . . . . . . . . . : 10.60.139.119
+   Subnet Mask . . . . . . . . . . . : 255.255.128.0
+   Default Gateway . . . . . . . . . : 10.60.128.1
+
+C:\Users\muhamad_hasymi>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi
+
+22/10/2019  13:09    <DIR>          .
+22/10/2019  13:09    <DIR>          ..
+11/10/2019  07:11    <DIR>          .android
+11/10/2019  06:11    <DIR>          .AndroidStudio3.5
+16/10/2019  13:49               499 .bash_history
+08/10/2019  01:04    <DIR>          .config
+10/10/2019  00:08                62 .gitconfig
+11/10/2019  07:11    <DIR>          .gradle
+09/10/2019  23:53    <DIR>          .ssh
+08/10/2019  02:49    <DIR>          .vscode
+11/10/2019  05:19    <DIR>          3D Objects
+11/10/2019  06:54    <DIR>          AndroidStudioProjects
+11/10/2019  05:19    <DIR>          Contacts
+22/10/2019  12:56    <DIR>          Creative Cloud Files
+16/10/2019  18:52    <DIR>          Desktop
+17/10/2019  11:01    <DIR>          Documents
+22/10/2019  10:44    <DIR>          Downloads
+11/10/2019  05:19    <DIR>          Favorites
+11/10/2019  05:19    <DIR>          Links
+22/10/2019  13:20    <DIR>          mencoba
+11/10/2019  05:19    <DIR>          Music
+08/10/2019  11:23    <DIR>          OneDrive
+15/10/2019  19:35    <DIR>          Pictures
+14/10/2019  09:19    <DIR>          Postman
+11/10/2019  05:19    <DIR>          Saved Games
+11/10/2019  05:19    <DIR>          Searches
+22/10/2019  10:08                 6 test.txt
+18/10/2019  09:58    <DIR>          Videos
+               3 File(s)            567 bytes
+              25 Dir(s)  61.675.053.056 bytes free
+
+C:\Users\muhamad_hasymi>cd mencoba
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:20    <DIR>          .
+22/10/2019  13:20    <DIR>          ..
+22/10/2019  13:20    <DIR>          berlatih
+22/10/2019  13:14            24.520 coba.txt
+               1 File(s)         24.520 bytes
+               3 Dir(s)  61.675.048.960 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>echo.> coba3.txt
+
+C:\Users\muhamad_hasymi\mencoba>dir
+ Volume in drive C is C Disk
+ Volume Serial Number is 2403-B58C
+
+ Directory of C:\Users\muhamad_hasymi\mencoba
+
+22/10/2019  13:28    <DIR>          .
+22/10/2019  13:28    <DIR>          ..
+22/10/2019  13:20    <DIR>          berlatih
+22/10/2019  13:14            24.520 coba.txt
+22/10/2019  13:28                 2 coba3.txt
+               2 File(s)         24.522 bytes
+               3 Dir(s)  61.674.356.736 bytes free
+
+C:\Users\muhamad_hasymi\mencoba>print coba3.txt
+Unable to initialize device PRN
+
+C:\Users\muhamad_hasymi\mencoba>cd ../
+
+C:\Users\muhamad_hasymi>tree C:\Users\muhamad_hasymi /f |more
+Folder PATH listing for volume C Disk
+Volume serial number is 2403-B58C
+C:\USERS\MUHAMAD_HASYMI
+│   .bash_history
+│   .gitconfig
+│   test.txt
+│
+├───.android
+│   │   adbkey
+│   │   adbkey.pub
+│   │   analytics.settings
+│   │   build-cache.lock
+│   │   debug.keystore
+│   │
+│   ├───avd
+│   ├───build-cache
+│   │   │   3.5.1.lock
+│   │   │
+│   │   └───3.5.1
+│   │           .cache-eviction-marker
+│   │           .cache-use-marker
+│   │
+│   ├───cache
+│   └───studio
+│       └───installer
+│               firstrun.data
+│
+├───.AndroidStudio3.5
+│   ├───config
+^C^C
+C:\Users\muhamad_hasymi>
