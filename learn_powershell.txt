@@ -1,0 +1,54 @@
+PS C:\Users\muhamad_hasymi\powershell> mkdir mencoba_powershell                                                                                                                                 
+
+    Directory: C:\Users\muhamad_hasymi\powershell
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       10/22/2019   2:23 PM                mencoba_powershell
+
+
+PS C:\Users\muhamad_hasymi\powershell> cd .\mencoba_powershell\                                                                                                                                 PS C:\Users\muhamad_hasymi\powershell\mencoba_powershell> dir                                                                                                                                   PS C:\Users\muhamad_hasymi\powershell\mencoba_powershell> ni berlatih.ps1                                                                                                                       
+
+    Directory: C:\Users\muhamad_hasymi\powershell\mencoba_powershell
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       10/22/2019   2:23 PM              0 berlatih.ps1
+
+
+PS C:\Users\muhamad_hasymi\powershell\mencoba_powershell> start notepad.exe berlatih.ps1                                                                                                        PS C:\Users\muhamad_hasymi\powershell\mencoba_powershell> dir                                                                                                                                   
+
+    Directory: C:\Users\muhamad_hasymi\powershell\mencoba_powershell
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       10/22/2019   2:24 PM             72 berlatih.ps1
+
+
+PS C:\Users\muhamad_hasymi\powershell\mencoba_powershell> & ".\berlatih.ps1"                                                                                                                    & : File C:\Users\muhamad_hasymi\powershell\mencoba_powershell\berlatih.ps1 cannot be loaded because running scripts is disabled on this system. For more information, see
+about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:3
++ & ".\berlatih.ps1"
++   ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\Users\muhamad_hasymi\powershell\mencoba_powershell> Set-ExecutionPolicy RemoteSigned                                                                                                      
+Execution Policy Change
+The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help
+topic at https:/go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): Y
+PS C:\Users\muhamad_hasymi\powershell\mencoba_powershell> dir                                                                                                                                   
+
+    Directory: C:\Users\muhamad_hasymi\powershell\mencoba_powershell
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       10/22/2019   2:24 PM             72 berlatih.ps1
+
+
+PS C:\Users\muhamad_hasymi\powershell\mencoba_powershell> & ".\berlatih.ps1"                                                                                                                    Selamat Datang Hasymi, Gimana Kabar?? Kabar baik kan...hehe
+PS C:\Users\muhamad_hasymi\powershell\mencoba_powershell>                                                                                                                                                                                                        
