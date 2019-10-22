@@ -5,7 +5,7 @@
 
 # learn command line windows using cmd.exe
 
-Some command line syntax that I have used in cmdline.txt :
+Some command line syntax that I have used in <b> cmdline.txt </b> :
 
 1. <code> mkdir </code> - make a new directory
 2. <code> echo.> filename.txt </code> - make a new file
