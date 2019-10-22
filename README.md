@@ -1,10 +1,12 @@
+# praxis-academy
 # praxis-academy-kemampuan-dasar-1-latihan-powershellscripts
-praxis-academy
 
 
-#learn command line windows using cmd.exe
+
+# learn command line windows using cmd.exe
 
 Some command line syntax that I have used in cmdline.txt :
+
 1. <code> mkdir </code> - make a new directory
 2. <code> echo.> filename.txt </code> - make a new file
 3. <code> copy filnametarget.txt filenametujuan.txt </code> - copy a file
