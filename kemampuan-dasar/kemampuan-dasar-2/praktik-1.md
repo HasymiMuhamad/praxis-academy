@@ -851,6 +851,64 @@ Date:   Wed Oct 23 11:23:41 2019 +0700
 No next tag  (press RETURN)
 muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
 
+# 5. Clean Up Work Before Submit
+
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git
+$ ls
+learn/
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git
+$ cd learn
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ ls
+belajar.txt  coba.txt   coba2.txt  data2.txt  README.txt
+bob.txt      coba1.txt  data1.txt  data5.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ git log --oneline
+01e2876 (HEAD -> bob-changes, user/bob-changes) add bob.txt
+0bfa36d (user/data, data) Merge branch 'data' of https://github.com/HasymiMuhamad/learn-git into data
+0d2fa11 add data5.txt
+83fefea (user/master, master) add data1.txt data2.txt
+dfa2940 (checkout) add coba1.txt and coba2.txt
+534f61d add coba.txt
+540b701 add belajar.txt
+5ad7edd Add Readme.txt explanation
+bc13a17 First commit.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ git rebase 534f61d
+First, rewinding head to replay your work on top of it...
+Applying: add coba1.txt and coba2.txt
+Applying: add data5.txt
+Applying: add data1.txt data2.txt
+Applying: add bob.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ pick 540b701
+bash: pick: command not found
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ pick 540b701 add belajar.txt
+bash: pick: command not found
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ git log --oneline
+bacf65c (HEAD -> bob-changes) add bob.txt
+e3c0257 add data1.txt data2.txt
+5687862 add data5.txt
+ffee8ab add coba1.txt and coba2.txt
+534f61d add coba.txt
+540b701 add belajar.txt
+5ad7edd Add Readme.txt explanation
+bc13a17 First commit.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$
+
+
 
 
 
