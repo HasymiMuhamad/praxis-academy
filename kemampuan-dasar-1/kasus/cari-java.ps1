@@ -1,5 +1,7 @@
-Read-Host "Kamu mau cari file .java di drive mana?";
+Write-Host "Sedang mencari file .java, wait ya...";
 
-$drive_name = Read-Host
-Get-Childitem –Path {$drive_name}:\ -Include *.java* -File -Recurse -ErrorAction SilentlyContinue
+Get-Childitem –Path C:\ -Include *.java* -File -Recurse -ErrorAction SilentlyContinue
 
+Get-Childitem –Path D:\ -Include *.java* -File -Recurse -ErrorAction SilentlyContinue
+
+Get-Childitem –Path E:\ -Include *.java* -File -Recurse -ErrorAction SilentlyContinue
