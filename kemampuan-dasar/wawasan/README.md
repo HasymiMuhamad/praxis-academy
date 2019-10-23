@@ -23,3 +23,17 @@ Manajemen adalah seni menyelesaikan pekerjaan melalui orang lain. Definisi Mary 
 
 Scrum adalah metode pengembangan perangkat lunak agile yang dikembangkan oleh Jeff Sutherland dan tim pengembangannya di awal 1990-an. Selanjutnya, pengembangan lebih lanjut tentang metode Scrum telah dilakukan oleh Schwaber dan Beedle[1]. Prinsip scrum konsisten dengan manifesto agile dan digunakan untuk memandu kegiatan pengembangan dalam suatu proses yang menggabungkan kegiatan kerangka kerja (framework activity) berikut: kebutuhan (requirements), analisis (analysis), desain (design), evolusi (evolution), dan pengiriman (delivery). Dalam setiap kegiatan kerangka kerja, work task terjadi dalam pola proses yang disebut sprint. Pekerjaan yang dilakukan dalam sprint (jumlah sprint yang diperlukan untuk setiap kegiatan kerangka kerja akan bervariasi tergantung pada kompleksitas dan ukuran produk) disesuaikan dengan masalah yang dihadapi dan didefinisikan dan sering dimodifikasi secara real time oleh tim Scrum
 
+
+# Kesimpulan
+
+Perangkat lunak (Software) merupakan suatu data yang diformat, dan disimpan secara digital, termasuk program komputer, dokumentasinya, dan berbagai informasi yang bisa dibaca, dan ditulis oleh komputer. Software dalam suatu keutuhan teknologi informasi merupakan suatu komponen yang tidak dapat dihilangkan. Tanpa software suatu hardware dalam suatu komponen teknologi informasi kurang dapat berfungsi optimal, bahkan tidak dapat difungsikan sama sekali. Software juga dapat mempermudah manusia melakukan hal-hal rumit menjadi lebih mudah. 
+
+Membuat atau mengembangkan suatu software membutuhkan suatu keilmuan dan metode tertentu. Keilmuan disini dimaksudkan sebagai suatu hal teknis yang wajib diketahui oleh pengembang software, sedangkan metode merupakan cara developer dalam mengembangkan atau memproduksi suatu software tertentu. 
+
+Pengetahuan mengenai metode pengembangan software begitu penting bagi developer, mengingat memproduksi software memerlukan strategi khusus guna software yang dibuat sesuai dengan kebutuhan market dan memiliki kualitas yang baik. 
+
+Setidaknya terdapat dua metode pengembangan software yang banyak digunakan oleh developer dalam mereka mengembangkan suatu software, yakni AGILE dan SCRUM. 
+
+AGILE merupakan metodologi pengembangan perangkat lunak yang didasarkan pada prinsip-prinsip yang sama atau pengembangan sistem jangka pendek yang memerlukan adaptasi cepat dari pengembang terhadap perubahan dalam bentuk apapun. Sedangkan SCRUM merupakan metode pengembangan perangkat lunak agile yang dikembangkan oleh Jeff Sutherland dan tim pengembangannya di awal 1990-an.
+
+SCRUM sendiri juga merupakan pengembangan dari metode development AGILE. 
