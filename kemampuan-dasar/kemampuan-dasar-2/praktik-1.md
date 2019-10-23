@@ -323,3 +323,101 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/praxis-academy-git/learn (master)
 $
+
+# 2. Pull Project and Make Simple Changes
+
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull
+$ git clone https://github.com/HasymiMuhamad/learn-git.git
+Cloning into 'learn-git'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 12 (delta 2), reused 12 (delta 2), pack-reused 0
+Unpacking objects: 100% (12/12), done.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull
+$ ls
+learn-git/
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull
+$ cd learn-git/
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (master)
+$ ls
+belajar.txt  coba.txt  coba1.txt  coba2.txt  README.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (master)
+$ git checkout -b data
+Switched to a new branch 'data'
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
+$ touch data1.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
+$ ls
+belajar.txt  coba.txt  coba1.txt  coba2.txt  data1.txt  README.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
+$ branch
+bash: branch: command not found
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
+$ git branch
+* data
+  master
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
+$ touch data2.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
+$ ls
+belajar.txt  coba.txt  coba1.txt  coba2.txt  data1.txt  data2.txt  README.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
+$ git status
+On branch data
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        data1.txt
+        data2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
+$ git add data1.txt data2.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
+$ git commit -m "add data1.txt data2.txt"
+[data 83fefea] add data1.txt data2.txt
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 data1.txt
+ create mode 100644 data2.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
+$ git push origin data
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 243 bytes | 243.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'data' on GitHub by visiting:
+remote:      https://github.com/HasymiMuhamad/learn-git/pull/new/data
+remote:
+To https://github.com/HasymiMuhamad/learn-git.git
+ * [new branch]      data -> data
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
+$ git branch
+* data
+  master
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
+$ ls
+belajar.txt  coba.txt  coba1.txt  coba2.txt  data1.txt  data2.txt  README.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
+
