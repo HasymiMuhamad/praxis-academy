@@ -1,3 +1,5 @@
+# 1. Create a New Project and Host it on Github
+
 
 muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/praxis-academy-git
 $ mkdir learn
