@@ -652,4 +652,205 @@ Everything up-to-date
 muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
 $
 
+# 4. Make a lot of Change
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git
+$ ls
+learn/
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git
+$ cd learn
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (data)
+$ git status
+On branch data
+nothing to commit, working tree clean
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (data)
+$ ls
+belajar.txt  coba1.txt  data1.txt  data5.txt
+coba.txt     coba2.txt  data2.txt  README.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (data)
+$ git add .
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (data)
+$ git commit -m "add data5.txt"
+On branch data
+nothing to commit, working tree clean
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (data)
+$ git push user2 data
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 494 bytes | 247.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/HasymiMuhamad/learn-git.git
+   83fefea..0bfa36d  data -> data
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (data)
+$ ls
+belajar.txt  coba1.txt  data1.txt  data5.txt
+coba.txt     coba2.txt  data2.txt  README.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (data)
+$ git branch
+  checkout
+* data
+  master
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (data)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'user2/master'.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ ls
+belajar.txt  coba.txt  coba1.txt  coba2.txt  data1.txt  data2.txt  README.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git remote rename user2 user
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git remote
+user
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git remote -v
+user    https://github.com/HasymiMuhamad/learn-git.git (fetch)
+user    https://github.com/HasymiMuhamad/learn-git.git (push)
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git remote update
+Fetching user
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git checkout master
+Already on 'master'
+Your branch is up to date with 'user/master'.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git checkout data
+Switched to branch 'data'
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (data)
+$ ls
+belajar.txt  coba1.txt  data1.txt  data5.txt
+coba.txt     coba2.txt  data2.txt  README.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (data)
+$ git merge user/master
+Already up to date.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (data)
+$ git diff user/master
+diff --git a/data5.txt b/data5.txt
+new file mode 100644
+index 0000000..e69de29
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (data)
+$ git push user master
+Everything up-to-date
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (data)
+$ git checkout -b bob-changes
+Switched to a new branch 'bob-changes'
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ git branch
+* bob-changes
+  checkout
+  data
+  master
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ git checkout bob-changes
+Already on 'bob-changes'
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ touch bob.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ git add .
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ git commit -m "add bob.txt"
+[bob-changes 01e2876] add bob.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bob.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ git push user bob-changes
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 240 bytes | 240.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'bob-changes' on GitHub by visiting:
+remote:      https://github.com/HasymiMuhamad/learn-git/pull/new/bob-changes
+remote:
+To https://github.com/HasymiMuhamad/learn-git.git
+ * [new branch]      bob-changes -> bob-changes
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ ls
+belajar.txt  coba.txt   coba2.txt  data2.txt  README.txt
+bob.txt      coba1.txt  data1.txt  data5.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ git branch
+* bob-changes
+  checkout
+  data
+  master
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ git commit -am "updated README.txt"
+On branch bob-changes
+nothing to commit, working tree clean
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ git log git log --oneline
+fatal: ambiguous argument 'git': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+$ git log
+commit 01e2876873de4abf32c1023b45be3c8b1b4bbc76 (HEAD -> bob-changes, user/bob-changes)
+Author: HasymiMuhamad <hasymimuhamad@gmail.com>
+commit 01e2876873de4abf32c1023b45be3c8b1b4bbc76 (HEAD -> bob-changes, user/bob-c
+hanges)
+Author: HasymiMuhamad <hasymimuhamad@gmail.com>
+Date:   Wed Oct 23 13:38:16 2019 +0700
+
+    add bob.txt
+
+commit 0bfa36d03155c57b70083c91fe67593536bb88fc (user/data, data)
+Merge: 0d2fa11 83fefea
+Author: HasymiMuhamad <hasymimuhamad@gmail.com>
+Date:   Wed Oct 23 13:30:34 2019 +0700
+
+    Merge branch 'data' of https://github.com/HasymiMuhamad/learn-git into data
+
+commit 0d2fa11baedc0d5c0e95fdb01f24857420e3af26
+Author: HasymiMuhamad <hasymimuhamad@gmail.com>
+Date:   Wed Oct 23 13:29:52 2019 +0700
+
+    add data5.txt
+
+commit 83fefea8c4ee66018bd30debdc368d4630a9729c (user/master, master)
+Author: HasymiMuhamad <hasymimuhamad@gmail.com>
+Date:   Wed Oct 23 11:23:41 2019 +0700
+No next tag  (press RETURN)
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (bob-changes)
+
+
+
 
