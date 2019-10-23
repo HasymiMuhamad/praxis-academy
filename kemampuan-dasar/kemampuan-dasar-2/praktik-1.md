@@ -421,3 +421,235 @@ belajar.txt  coba.txt  coba1.txt  coba2.txt  data1.txt  data2.txt  README.txt
 
 muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull/learn-git (data)
 
+# 3. Pull Another Branch and Merge to Master Branch
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git
+$ ls
+learn/
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git
+$ cd learn
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ ls
+belajar.txt  coba.txt  coba1.txt  coba2.txt  README.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git remote rename origin user1
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git branch
+* master
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git branch data
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git branch
+  data
+* master
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git branch checkout data
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git branch
+  checkout
+  data
+* master
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git branch
+  checkout
+  data
+* master
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git branch
+  checkout
+  data
+* master
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git remote
+user1
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git remote -v
+user1   https://github.com/HasymiMuhamad/learn-git.git (fetch)
+user1   https://github.com/HasymiMuhamad/learn-git.git (push)
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git fetch origin data
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git fetch user1 data
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 2 (delta 1), reused 2 (delta 1), pack-reused 0
+Unpacking objects: 100% (2/2), done.
+From https://github.com/HasymiMuhamad/learn-git
+ * branch            data       -> FETCH_HEAD
+ * [new branch]      data       -> user1/data
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git branch -a
+  checkout
+  data
+* master
+  remotes/user1/data
+  remotes/user1/master
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git checkout -b master data
+fatal: A branch named 'master' already exists.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git checkout -b data data/data1.txt
+fatal: 'data/data1.txt' is not a commit and a branch 'data' cannot be created from it
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git diff master data
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git log -1 -p
+commit dfa2940898fe202cf241aa65ec57b11e1a2e4d3c (HEAD -> master, user1/master, data, checkout)
+Author: HasymiMuhamad <hasymimuhamad@gmail.com>
+Date:   Wed Oct 23 11:06:07 2019 +0700
+
+    add coba1.txt and coba2.txt
+
+diff --git a/coba1.txt b/coba1.txt
+new file mode 100644
+index 0000000..e69de29
+diff --git a/coba2.txt b/coba2.txt
+new file mode 100644
+index 0000000..e69de29
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git checkout master
+Already on 'master'
+Your branch is up to date with 'user1/master'.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git merge data
+Already up to date.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git status
+On branch master
+Your branch is up to date with 'user1/master'.
+
+nothing to commit, working tree clean
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git pull branch data
+fatal: 'branch' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git pull data
+fatal: 'data' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ ls
+belajar.txt  coba.txt  coba1.txt  coba2.txt  README.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git branch
+  checkout
+  data
+* master
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git branch data
+fatal: A branch named 'data' already exists.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git pull user1 data
+From https://github.com/HasymiMuhamad/learn-git
+ * branch            data       -> FETCH_HEAD
+Updating dfa2940..83fefea
+Fast-forward
+ data1.txt | 0
+ data2.txt | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 data1.txt
+ create mode 100644 data2.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ ls
+belajar.txt  coba.txt  coba1.txt  coba2.txt  data1.txt  data2.txt  README.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git push user1 master
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/HasymiMuhamad/learn-git.git
+   dfa2940..83fefea  master -> master
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ ls
+belajar.txt  coba.txt  coba1.txt  coba2.txt  data1.txt  data2.txt  README.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git status
+On branch master
+Your branch is up to date with 'user1/master'.
+
+nothing to commit, working tree clean
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git pull user1 data
+From https://github.com/HasymiMuhamad/learn-git
+ * branch            data       -> FETCH_HEAD
+Already up to date.
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ ls
+belajar.txt  coba.txt  coba1.txt  coba2.txt  data1.txt  data2.txt  README.txt
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git status
+On branch master
+Your branch is up to date with 'user1/master'.
+
+nothing to commit, working tree clean
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git add .
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git status
+On branch master
+Your branch is up to date with 'user1/master'.
+
+nothing to commit, working tree clean
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git commit -m "add data"
+On branch master
+Your branch is up to date with 'user1/master'.
+
+nothing to commit, working tree clean
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$ git push user1 master
+Everything up-to-date
+
+muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/Praxis Test/praxis-academy-git/learn (master)
+$
+
+
