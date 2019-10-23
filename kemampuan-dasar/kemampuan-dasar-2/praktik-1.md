@@ -324,7 +324,7 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/praxis-academy-git/learn (master)
 $
 
-# 2. Pull Project and Make Simple Changes
+# 2. Another Person Pull Project and Make Simple Changes
 
 
 muhamad_hasymi@DESKTOP-FVMD1T0 MINGW64 /e/friend-pull
