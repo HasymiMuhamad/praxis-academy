@@ -1,3 +1,14 @@
-var el = document.querySelector(".myclass .bar");
+let el = document.querySelector(".myclass .line");
 el.textContent = "test";
 el.textContent = "bob";
+let coba = document.querySelector(".myclass .line-1");
+coba.textContent = "coba1";
+coba.textContent = "coba2";
+let bilangan = document.querySelector(".myclass .line-2");
+bilangan.textContent = 1;
+let bolean = document.querySelector(".myclass .line-3");
+bolean.textContent = true;
+let array1 = document.querySelector(".myclass .line-3");
+array1.textContent = [1,'kata',[1,2,3]];  
+let array2 = document.querySelector(".myclass .line-4");
+array2.textContent = array1[1];
