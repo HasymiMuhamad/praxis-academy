@@ -51,3 +51,23 @@ hasilPerkalian.textContent = perkalian;
 let pembagian = angka1/angka2;
 let hasilPembagian = document.querySelector(".myclass .line-hasil-pembagian")
 hasilPembagian.textContent = pembagian;
+
+
+let warnaMobil = 'biru';
+if (warnaMobil === 'biru'){
+        alert ('Betul, Warnanya biru');
+    } else {
+        alert ('Salah, Warnanya bukan biru');
+    }
+
+let hasilWarna = document.querySelector(".myclass .line-hasil-warna");
+hasilWarna.textContent = alert;
+
+
+
+const tombol = document.querySelector('.button-1');
+
+  tombol.onclick = function coba (){
+      alert('Hasil Klik Tombol')
+};
+
