@@ -71,3 +71,41 @@ const tombol = document.querySelector('.button-1');
       alert('Hasil Klik Tombol')
 };
 
+
+let gambarLogo = document.querySelector('.img-1');
+
+gambarLogo.onclick = function() {
+    let sumber = gambarLogo.getAttribute('src');
+    if(sumber === 'images/firefox_png2.png') {
+      gambarLogo.setAttribute ('src','images/firefox_png1.png');
+    } else {
+      gambarLogo.setAttribute ('src','images/firefox_png2.png');
+    }
+}
+
+
+let tombol2 = document.querySelector('.button-2');
+let heading2 = document.querySelector('.heading-2');
+
+function namaKamu(){
+    let tulisNama = prompt('Tulis nama kamu ya ...!!');
+    if(!tulisNama || tulisNama === null){
+        namaKamu();
+    } else {
+        localStorage.setItem('nama', tulisNama);
+        heading2.textContent = 'Selamat Datang' + tulisNama;
+    }
+    // localStorage.setItem('nama', tulisNama);
+    // heading2.textContent = 'Selamat Datang' + tulisNama;
+}
+
+if(!localStorage.getItem('nama')){
+    namaKamu();
+} else {
+    let simpanNama = localStorage.getItem('nama');
+    heading2.textContent = 'Selamat Datang' + simpanNama;
+}
+
+tombol2.onclick = function(){
+    namaKamu();
+}
