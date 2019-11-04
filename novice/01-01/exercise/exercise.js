@@ -12,3 +12,14 @@ function setengahSegitiga (Tingginya) {
   }
   
   setengahSegitiga(7);
+
+
+  //Output
+
+  //#
+  //##
+  //###
+  //####
+  //#####
+  //######
+  //#######
