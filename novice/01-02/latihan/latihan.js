@@ -68,11 +68,30 @@ function latihan6(){
 latihan6();
 
 //Exection Handling Statements
-function latihan7 (){
-    throw 'Coba';
-    throw 1111;
-    throw true;
+// function latihan7 (){
+//     throw 'error';
+//     throw 1111;
+//     throw true;
+//     throw { toString:  function(){
+//         return "learn throw "
+//     }}
 
+// }
+
+// latihan7();
+
+function errorHandling(){
+    try {
+        try {
+          throw new Error('oops');
+        }
+        finally {
+          console.log('finally');
+        }
+      }
+      catch (ex) {
+        console.error('outer', ex.message);
+      }
 }
 
-latihan7();
+errorHandling();
