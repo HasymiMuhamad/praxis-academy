@@ -59,10 +59,20 @@ function latihan6(){
         case 0:
           console.log("Hari Minggu");
           break;
-          
+
         default:
           console.log("Bukan Hari Weekend");
       }
 }
 
 latihan6();
+
+//Exection Handling Statements
+function latihan7 (){
+    throw 'Coba';
+    throw 1111;
+    throw true;
+
+}
+
+latihan7();
