@@ -67,31 +67,40 @@ function latihan6(){
 
 latihan6();
 
-//Exection Handling Statements
-// function latihan7 (){
-//     throw 'error';
-//     throw 1111;
-//     throw true;
-//     throw { toString:  function(){
-//         return "learn throw "
-//     }}
-
-// }
-
-// latihan7();
 
 function errorHandling(){
     try {
         try {
-          throw new Error('oops');
+          throw new Error('Error ya ? Kenapa hayo...');
         }
         finally {
-          console.log('finally');
+          console.log('Ini Finally');
         }
       }
       catch (ex) {
-        console.error('outer', ex.message);
+        console.error('Ini Catch', ex.message);
       }
 }
 
 errorHandling();
+
+
+
+function cobaTry() {
+    try {
+      console.log(0);
+      throw 'try running';
+    } catch(e) {
+      console.log(1);
+      return true; 
+                   
+      console.log(2); 
+    } finally {
+      console.log(3);
+      return false; 
+      console.log(4); 
+    }
+      
+    console.log(5); 
+  }
+  console.log(cobaTry()); 
